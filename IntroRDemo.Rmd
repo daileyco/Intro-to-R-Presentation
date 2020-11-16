@@ -28,3 +28,30 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+
+
+
+## In-line Coding
+
+```{r}
+
+my.object <- cars
+
+my.object <- cars[25:50,]
+
+mean(my.object$speed)
+
+```
+
+
+### Using no code
+The mean of the cars' speed is 15.4.
+
+### Using code
+The mean of the cars' speed is `r mean(my.object$speed)`. 
+
+
+
+
